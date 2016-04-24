@@ -1,0 +1,10 @@
+document.write("<script type='text/javascript' src='ejercicio1.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio2.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio3.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio4.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio5.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio6.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio7.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio8.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio9.js'></script>");
+document.write("<script type='text/javascript' src='ejercicio10.js'></script>");
