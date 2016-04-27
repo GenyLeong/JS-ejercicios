@@ -11,28 +11,40 @@
             oHead.appendChild(oScript);        
         }
     }
-    var numero=0;
-    var suma;
-    var opciones="";
-    var ver="";
+
+    var suma=0;
+    function cantidad_depositado(){
+        var cantidad=Number(prompt("Ingresa deposito del mes: "));
+        suma=suma+cantidad;
+        alert("Dinero ahorrado este mes: " + cantidad);
+    };  
+
+    function ver_cantidad(){
+        var palabra="ver";
+        cantidad=String(prompt("\n" + "Escribe 'ver' para ver cantidad de dinero ahorrado"));
+            if(cantidad.toLowerCase()===palabra) {
+             alert("Dinero ahorrado:" + suma);
+            }
+    };
+
     function myFunction5(){
+        var opciones="";
+        var opcion=true;
+        do{
         opciones=String(prompt("1) Para ingresar deposito del mes"+
             "\n"+ "2) Para ver cantidad de dinero ahorrado" + 
-            "\n"+ "3) Para ver ahorro por mes"));
+            "\n"+ "0) Para salir"));
             switch(opciones){
                 case "1":
-                    for(i=0; i<12; i++){
-                        numero=Number(prompt("Ingresa deposito del mes" + (i+1)));
-                        suma=suma+numero;
-                        alert("Dinero ahorrado:" + suma)
-                    }
+                        cantidad_depositado();
                     break;
                 case "2":
-                    ver=String(prompt("\n" + "Escribe 'ver' para ver cantidad de dinero ahorrado"));
-                    if(ver.equals("ver")==true) {
-                            suma=suma+numero;
-                            alert("Dinero ahorrado:" + suma)
-                        }
+                        ver_cantidad();
+                   break;
+                case "0":
+                        opcion=false;
                     break;
             } 
+            
+        } while(opcion)
 };

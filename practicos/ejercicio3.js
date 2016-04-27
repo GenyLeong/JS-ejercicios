@@ -12,7 +12,6 @@
         }
     }
 
-
 function fib(numero){
 
     if (numero==0){
@@ -48,10 +47,10 @@ function vfib (numero) {
     return vect;
 }
 
-function nfib(n){
+function nfib(m){
     var i=0;
 
-    while (n >= fib(i)){
+    while (m >= fib(i)){
         i=i+1;
     }
 

@@ -21,6 +21,7 @@ var prompt = require('prompt-sync')();*/
 
 var suma = 0;
 var i = 0;
+
 function myFunction() {
     while(i < 10) {
         numero = Number(prompt("Ingresa tu número " + (i+1)));
