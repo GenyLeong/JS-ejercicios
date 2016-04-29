@@ -16,7 +16,7 @@
     function cantidad(){
       n=parseInt(prompt("Ingrese cantidad de ventas"))
        for (i=0;i<n;i++){
-            numbers.push(parseInt(prompt("Ingresa numero: " + (i+1))));
+            numbers.push(parseFloat(prompt("Ingresa numero: " + (i+1))));
        }
 
     };  
@@ -62,6 +62,7 @@
                     break;
                 case "2":
                         alert(resultado_cantidad());
+                        numbers=[]
                    break;
                 case "0":
                     opcion=false;

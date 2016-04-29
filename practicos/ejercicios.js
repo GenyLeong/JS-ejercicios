@@ -7,4 +7,3 @@ document.write("<script type='text/javascript' src='ejercicio6.js'></script>");
 document.write("<script type='text/javascript' src='ejercicio7.js'></script>");
 document.write("<script type='text/javascript' src='ejercicio8.js'></script>");
 document.write("<script type='text/javascript' src='ejercicio9.js'></script>");
-document.write("<script type='text/javascript' src='ejercicio10.js'></script>");

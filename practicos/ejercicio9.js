@@ -11,3 +11,26 @@
             oHead.appendChild(oScript);        
         }
     }
+
+    total=0;
+    mensual=0;
+    function myFunction9(){
+        costo=parseFloat(prompt("Ingrese costo del producto: "))
+        interes=parseFloat(prompt("Ingrese interés mensual: "))
+
+        do{
+            apagar=parseInt(prompt("Ingrese en cuantos meses pagará: "))
+            
+            if (isNaN(apagar) || (apagar<=0 || apagar>24)){
+                alert("Ingrese numero valido")
+            }
+        
+        } while  (isNaN(apagar) || (apagar<=0 || apagar>24))
+
+                total=(costo*interes)
+                mensual=(total/apagar);
+
+            mensaje= "Cada mes pagará: " + mensual;
+
+            alert(mensaje)
+    }
